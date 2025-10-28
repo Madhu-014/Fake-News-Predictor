@@ -25,6 +25,8 @@ Fake-News-Predictor/
 ├── requirements.txt          # Python dependencies
 ├── .gitignore                # To prevent large data files from being pushed
 └── README.md
+
+
 ⚙️ Installation & Setup
 1️⃣ Clone the Repository
 bash
@@ -55,7 +57,7 @@ The dataset used in this project comes from Kaggle:
 Steps to Download:
 Visit the Kaggle link above.
 
-Click on “Download” to get the ZIP file.
+Click Download to get the ZIP file.
 
 Extract it and move the following two files into the data/ folder:
 
@@ -64,7 +66,6 @@ Copy code
 data/
 ├── True.csv
 └── Fake.csv
+Then create a processed/ folder where your train, test, and validation data will be stored.
 
-Then create a processed folder where your train,test and val data will be stored.
-
-You are all set
+✅ You are all set to run the project!
