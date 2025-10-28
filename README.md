@@ -12,28 +12,23 @@ You can run this project directly on Colab without any local setup:
 
 ## 📁 Project Structure
 
+```text
 Fake-News-Predictor/
-├── data/ # Folder to store raw Kaggle dataset (ignored in Git)
-│ ├── True.csv
-│ └── Fake.csv
-├── processed/ # Folder for processed train/test/validation datasets
-│ ├── train.csv
-│ ├── test.csv
-│ └── valid.csv
+├── data/                     # Folder to store raw Kaggle dataset (ignored in Git)
+│   ├── True.csv
+│   └── Fake.csv
+├── processed/                # Folder for processed train/test/validation datasets
+│   ├── train.csv
+│   ├── test.csv
+│   └── valid.csv
 ├── fake_news_predictor.ipynb # Jupyter / Colab notebook for model training
-├── requirements.txt # Python dependencies
-├── .gitignore # To prevent large data files from being pushed
+├── requirements.txt          # Python dependencies
+├── .gitignore                # To prevent large data files from being pushed
 └── README.md
-
-yaml
+⚙️ Installation & Setup
+1️⃣ Clone the Repository
+bash
 Copy code
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-```bash
 git clone https://github.com/Madhu-014/Fake-News-Predictor.git
 cd Fake-News-Predictor
 2️⃣ Create and Activate a Virtual Environment (Recommended)
@@ -60,36 +55,16 @@ The dataset used in this project comes from Kaggle:
 Steps to Download:
 Visit the Kaggle link above.
 
-Click on "Download" to get the ZIP file.
+Click on “Download” to get the ZIP file.
 
 Extract it and move the following two files into the data/ folder:
 
-graphql
+text
 Copy code
 data/
 ├── True.csv
 └── Fake.csv
-🧱 Data Preparation
-Once the raw CSV files are in the data/ folder, prepare the dataset by running:
 
-bash
-Copy code
-python prepare_dataset.py
-This will:
+Then create a processed folder where your train,test and val data will be stored.
 
-Merge the True.csv and Fake.csv files
-
-Shuffle and label the data
-
-Split it into train.csv, test.csv, and valid.csv
-
-Save them inside the processed/ folder
-
-✅ You’ll see:
-
-pgsql
-Copy code
-processed/
-├── train.csv
-├── test.csv
-└── valid.csv
+You are all set
