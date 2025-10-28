@@ -1,0 +1,41 @@
+
+---
+
+## 🛑 **.gitignore**
+
+Place this in the root of your repository.
+
+```gitignore
+# Virtual environment
+venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data folders
+data/
+processed/
+*.csv
+*.zip
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model files
+*.pkl
+*.h5
+*.pt
+*.joblib
+
+# System / IDE files
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Colab & Jupyter outputs
+*.log
+*.out
